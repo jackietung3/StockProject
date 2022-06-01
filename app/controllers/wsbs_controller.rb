@@ -1,0 +1,2 @@
+class WsbsController < ApplicationController
+end

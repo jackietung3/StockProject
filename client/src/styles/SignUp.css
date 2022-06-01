@@ -1,0 +1,42 @@
+#signup-box {
+    height:80.7vh;
+    color: white;
+    text-align: center;
+}
+
+#submit-signup {
+    margin: 20px;
+}
+
+#firstname-signup::placeholder{
+    color:black
+}
+
+input#firstname-signup:hover{
+    font-size: larger;
+}
+
+#lastname-signup::placeholder{
+    color:black
+}
+
+input#lastname-signup:hover{
+    font-size: larger;
+}
+#username-signup::placeholder{
+    color:black
+}
+
+input#username-signup:hover{
+    font-size: larger;
+}
+#firstname-signup::placeholder{
+    color:black
+}
+
+input#password-signup:hover{
+    font-size: larger;
+}
+#password-signup::placeholder{
+    color:black
+}

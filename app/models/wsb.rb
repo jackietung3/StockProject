@@ -1,0 +1,2 @@
+class Wsb < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+#user-data {
+    color: white;
+    height: 81.3vh;
+    text-align: center;
+}
+
+#submit-user-changes {
+    display: block;
+    margin: 30px auto auto auto;
+}

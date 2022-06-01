@@ -1,0 +1,51 @@
+nav {
+    height: 4vh;
+    /* grid-template-columns: repeat(3, 1fr) 10fr; */
+    align-items: center;
+    background-color: rgb(8, 82, 92);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.nav-link:hover {
+    font-size: 25px;
+    color: rgba(143, 212, 203, 0.952);
+    font-weight: bolder;
+    
+}
+
+#welcome {
+    color: white;
+    font-size: 20px;
+}
+
+#login {
+    justify-self: end;
+    /* margin-right: 10%; */
+}
+
+#logged-in {
+    display: inline;
+    justify-self: end;
+    position: absolute;
+    right: 0;
+}
+
+#or {
+    display: inline;
+    color: white;
+    font-size: 20px;
+
+}
+
+#logged-out {
+    display: inline;
+    justify-self: end;
+    position: absolute;
+    right: 0;
+}
