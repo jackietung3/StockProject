@@ -1,2 +1,0 @@
-class WatchListStock < ApplicationRecord
-end

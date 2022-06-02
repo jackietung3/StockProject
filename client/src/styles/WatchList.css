@@ -1,0 +1,25 @@
+.watchList{
+    text-align: center;
+    font-size: 55px
+}
+
+.watchListForStock{
+    text-align: center;
+    font-size: 55px;
+    text-decoration: underline;
+    
+}
+
+.addAStock{
+    font-size: 100px;
+    margin: auto;
+    display: block;
+    width:50%;
+    height:50%;
+}
+
+.stockName{
+    margin-left: 20vh;
+    font-size: 30px;
+    font-weight: bolder;
+}

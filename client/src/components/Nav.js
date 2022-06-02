@@ -19,6 +19,11 @@ return (
             <Link to="/" className="nav-link" >
                 <span> Home  </span>
             </Link>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+            <Link to="/WatchList" className="nav-link" >
+                <span> Watch List  </span>
+            </Link>
             
             {user ?
             <div id='logged-in'> 

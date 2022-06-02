@@ -6,6 +6,7 @@ import SignUp from "./SignUp";
 import Home from "./Home";
 import Nav from "./Nav";
 import Profile from "./Profile";
+import WatchList from "./WatchList";
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
 
         <Route exact path="/">
           <Home user={user}/>
+        </Route>
+
+        <Route exact path="/WatchList">
+          <WatchList user={user}/>
         </Route>
 
         <Route path="/Login">

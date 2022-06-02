@@ -6,7 +6,7 @@ function Stock({stock, setStock, user}) {
     const [buttonText,setButtonText] = useState(true)
 
     if(stock.quotes){
-
+        
     fetch(`http://localhost:3000/ticker?symbol_name=${stock.quotes[0].symbol}`,{
         method:"GET",
         headers:{"Content-Type": "application/json"}
@@ -18,13 +18,16 @@ function Stock({stock, setStock, user}) {
     function handleClick(){
         fetch(`http://localhost:3000/watchlist?userId=${user.id}`,{
         method:"PATCH",
-        headers:{"Content-Type": "application/json"},
-        data:{
+        headers:{
+            'Content-Type': 'application/json',
+            'Accepts': 'application/json'
+        },
+        body: JSON.stringify({
             tickerName: stock.price.symbol,
-        }
         })
-        // .then(setButtonText(false))
-    }
+    })
+    
+}
 
     // const data = [
     //     ["day", "low", "open", "close", "high"],

@@ -16,7 +16,15 @@ function TrendingStocks() {
 
     let mappedStocks =[]
     if (Object.keys(trendingStocks).length){
-        mappedStocks = trendingStocks.finance.result[0].quotes.map((stock)=><h1>{stock.symbol} ${stock.regularMarketPrice}</h1>)
+        mappedStocks = trendingStocks.finance.result[0].quotes.map((stock)=> {
+        const imgURL = `https://g.foolcdn.com/art/companylogos/mark/${stock.symbol}.png`
+            return (
+            <div>
+                <h1>{stock.symbol} ${stock.regularMarketPrice} </h1>
+                <img className='stockImg' src={imgURL} alt="Missing Stock Image 🥺 "/>
+            </div>
+        )
+        })
     }
     //not rendering mappedStocks so that line 24 and 31 can render
     
